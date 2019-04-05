@@ -11,21 +11,17 @@
 	margin: 0 auto;
 	background-color: black;
 	color: white;
-	height: 50px;
-	padding: 5px 50px;
+	min-height: 50px;
+	padding: 5px 4%;
 }
 
 
 .socialIcons a{
 	display: inline-block;
 	height: 32px;
+	margin: 0 1%;
 }
 
-.rightSide{
-	display: flex;
-	justify-content: center;
-	color: white;
-}
 
 .rightSide a{
 	text-decoration: none;
@@ -37,9 +33,9 @@
 	float: left;
 }
 .signIn, .language {
-	padding: 0 15px;
 	height: 35px;
 }
+
 
 .signIn>a>span{
 	line-height: 35px;
@@ -47,16 +43,14 @@
 	font-size: 12px;
 }
 
-.language {
-	border-left: 1px solid gray;
-}
 
 .language>select{
 	height: 35px;
 	line-height: 35px;
 	vertical-align: top;
 	font-size: 12px;
-	border: none;
+	border: transparent;
+	outline: none;
 	background-color: black;
 	color: white;
 	cursor: pointer;
@@ -64,14 +58,16 @@
 
 
 .header{
-	height: 70px;
+	min-height: 70px;
 	line-height: 70px;
 	vertical-align: middle;
 	background-color: #3f51b5;
 }
 
-.logo>img{
-	margin: 0 25%;
+.logo{
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
 }
 
 .headerNavMenu a{
@@ -81,16 +77,26 @@
 	text-decoration: none;
 }
 
+.headerNavMenu>ul{
+	margin: 0 auto;
+	width: 500px;
+
+}
+
 .headerNavMenu>ul>li{
 	display: inline-block;
 	list-style: none;
+	height: 70px;
+	box-sizing: border-box;
+
 }
 
 .headerNavMenu>ul>li>a{
-	padding: 0 20px;
+	padding: 0 18px;
+
 }
 
-.headerNavMenu>ul>li:hover > a{
+.headerNavMenu>ul>li:hover {
 	opacity: 0.7;
 	border-bottom: 2px solid red;
 }
@@ -100,6 +106,11 @@ div.headerNavMenu>ul>li>a{
 	background-repeat: no-repeat;
 	background-position:right;
 
+}
+
+.navButtons{
+	margin: 0 auto;
+	text-align: center;
 }
 
 .navButtons>div{
@@ -145,22 +156,22 @@ div.headerNavMenu>ul>li>a{
 }
 
 .headerSlider{
-	height: 730px;
+	min-height: 650px;
 	background-image: url(img/layer.png);
 	background-size: cover;
-	padding-top: 210px;
+	padding: 100px;
 }
 
 .headerSlider div{
-	width: 830px;
-	margin: 0 auto;
 	color:white;
 	text-align: center;
 }
 
+
 .headerSlider h3,h1{
 	text-transform: uppercase;
 	margin: 15px;
+
 }
 
 .sliderButton{
@@ -189,16 +200,16 @@ div.headerNavMenu>ul>li>a{
 .authorPhoto img{
 	margin: 0 auto;
 }
-.postData input{
+.postData{
 	color:grey;
 	background-color: transparent;
 	border: none;
 	text-align: center;
 }
-.cometsLikes{
+.comentsLikes{
 	padding: 30px;
 }
-.cometsLikes>div{
+.comentsLikes>div{
 	display: inline-block;
 	width: 150px;
 	margin: 0 15px;
@@ -206,54 +217,219 @@ div.headerNavMenu>ul>li>a{
 }
 
 /* ------main--------- */
-.mainHeader{
-	height: 60px;
-	padding: 15px;
-	border-bottom: 1px solid #d1cdcd;
+.main{
+	background-color: #f5f5f5;
+	padding: 30px 5%;
 }
-.sortBlog li{
-	float: left;
-	list-style:none;
-	padding: 0 20px;
+.mainHeader{
+	min-height: 60px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #d1cdcd;
+	background-color: white;
+}
+
+ .sortBlog a{
 	background-color: #f5f5f5;
 	border-radius: 25px;
 	text-transform: uppercase;
-	height: 30px;
-	line-height: 30px;
+	height: 40px;
+	line-height: 40px;
 	vertical-align: middle;
-	margin: 0 15px;	
+	margin: 10px;	
+	box-sizing: border-box;
+	padding: 10px 15px;
+	text-align: center;
+	color:black;
+	text-decoration: none;
 	
 }
 
-.sortBlog li:first-child{
+.sortBlog:first-child{
+	text-transform: uppercase;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
 	background-color: transparent;
 	border:none;
 	font-weight: bold;
-	
+	text-align: center;
+	margin: 10px;
 }
 
-.sortBlog li:after, .sortBlog:after{
-	content: '';
-	clear: both;
-	display: block;
-	
-}
 
-.sortBlog li a{
-	display: block;
-	text-decoration: none;
-	color:black;
-	text-transform: uppercase;
-}
-
-.sortBlog li:hover{
+.sortBlog a:hover{
 	border: 1px solid #5767be;
 	background-color: white;
-}
-.sortBlog li:hover a{
+	box-sizing: border-box;
 	color:#5767be;
 }
-.sortBlog li:hover:first-child{
+
+.sortBlog:hover:first-child{
 	border: none;
 	color: black;
+}
+
+.foolSize{
+	background-color: white;
+	margin-bottom: 15px;
+}
+.foolSize>div h3,p{
+	margin: 15px;
+}
+
+.authorVideo{
+	border-top: 1px solid #d1cdcd;
+	vertical-align: middle;
+	padding: 15px;
+	text-indent: 15px;
+}
+
+.authorVideo img{
+	float: left;
+	margin-right: 15px;
+}
+
+.horizontalNews{
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	background-color: white;
+	min-height: 170px;
+	margin-bottom: 15px;
+}
+
+.horizontalNews iframe{
+	min-height: 200px;
+	max-height: 100%;
+	width: 100%;
+}
+
+.videoDescription{
+	padding: 15px;
+}
+
+.vertical{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 15px;
+}
+
+.verticalNews, .verticalNews iframe{
+	max-width: 100%;
+	min-width: 100%;
+}
+
+/* --------------------aside----------------- */
+
+
+/* ------------footer------------------------- */
+/* --------------fotoSlider------------------- */
+
+.fotoSlider{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	grid-gap: 0;
+}
+
+.fotoSlider>div{
+	height: 235px;
+}
+
+.fotoSlider>div>img{
+	width: 100%;
+	height: 235px;
+}
+
+.footerSubscribe{
+	height: 200px;
+	background-image: url(img/footer-background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	padding: 80px 4%;
+}
+
+.footerSubscribe h2{
+	font-size: 40px;
+}
+
+.footerConteinerLists{
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+.emailFooter{
+	width: 270px;
+	background-color: transparent;
+	border-radius: 15px;
+	border:1px solid #909090;
+	outline: none;
+	text-indent: 20px;
+	color:white;
+}
+
+
+.buttonSubscribeFooter{
+	width: 170px;
+	border-radius: 15px;
+	border:none;
+	background-color: #303f9f;
+	text-align: center;
+	color:white;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.buttonSubscribeFooter:hover{
+	color: rgba(255,255,255,0.7);
+}
+
+
+
+
+
+
+
+/*--------------------------------------*/
+@media only screen and (max-width: 575px){
+
+	.leftSide{
+		max-width: 245px;
+		margin: 0 auto;
+	}
+
+	.signIn {
+		text-align: left;
+	}
+
+	.language {
+		text-align: right;
+	}
+
+	.headerNavMenu>ul>li{
+		display: block;
+		height: 30px;
+		min-width: 140px;
+		max-width: 180px;
+		margin-bottom: 5px;
+		margin: 0 40%;
+}
+
+.headerNavMenu>ul>li>a{
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		vertical-align: middle;
+		min-width: 140px;
+		max-width: 180px;
+		padding: 0;
+}
+
+.headerNavMenu>ul>li:hover {
+	margin-bottom: 0;
+}
+
+.horizontalNews{
+	grid-template-columns: 1fr;
+
 }
