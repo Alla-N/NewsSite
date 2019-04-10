@@ -318,12 +318,14 @@ div.headerNavMenu>ul>li>a{
 
 .videoDescription{
 	padding: 15px;
+	background-color: white;
 }
 
 .vertical{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-gap: 15px;
+	
 }
 
 .verticalNews, .verticalNews iframe{
